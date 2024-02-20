@@ -1,5 +1,5 @@
-@use "../utils/functions/"as*;
-@use "../utils/mixins"as*;
+@use "../utils/functions/" as *;
+@use "../utils/mixins" as *;
 
 html,
 body {
@@ -12,10 +12,11 @@ body {
   font-family: var(--font-family-primary);
   font-weight: var(--fw-400);
   font-style: normal;
-  font-size: clamp(16px, 1vw, 20px);
-  line-height: 1.5;
+  // font-size: clamp(16px, 1vw, 20px);
+  font-size: clamp(16px, 15.2px + 0.25vi, 20px);
+  line-height: 1.4;
   letter-spacing: 0;
-  color: var(--color-gray-700);
+  color: var(--color-gray-900);
   background-color: var(--color-white);
   font-optical-sizing: auto;
 
@@ -45,6 +46,10 @@ body {
 
 .main {
   padding-top: var(--header-height);
+}
+
+.section {
+  margin-bottom: clamp(3rem, vw(100), 6.25rem);
 }
 
 #form-request {
@@ -91,6 +96,6 @@ body {
     position: absolute;
     z-index: 1;
     inset: 0;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.48) 53.89%, rgba(0, 0, 0, 0) 74.96%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.66) 0.56%, rgba(0, 0, 0, 0.32) 79.06%, rgba(0, 0, 0, 0) 100%);
   }
 }

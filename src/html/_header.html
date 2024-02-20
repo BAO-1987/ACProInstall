@@ -2,7 +2,7 @@
   <div class="container">
     <nav class="nav">
       <a class="logo" href="index.html">
-        <img class="logo__img" src="./images/logo.svg" alt="Elite Roof Works " width="90" height="68">
+        <img class="logo__img" src="./images/logo.svg" alt="logo of ACProinstall" width="130" height="72">
       </a>
 
       <button class="burger" aria-label="Mobile menu" type="button"> <span></span> </button>
@@ -29,11 +29,22 @@
           </li>
 
           <li class="nav__item">
-            <a href="contact.html" class="nav__link {{ page === 'contact' }}">
-              Contact
+            <a href="contact.html" class="nav__link {{ page === 'faq' }}">
+              FAQ
             </a>
           </li>
+
+          <li class="nav__item">
+            <a href="contact.html" class="nav__link {{ page === 'blog' }}">
+              Blog
+            </a>
+          </li>
+
         </ul>
+
+        <button class="btn btn--sign" type="button">
+          Sign Up
+        </button>
 
         <button class="btn request-btn" type="button">
           Make A Request
@@ -45,7 +56,6 @@
 
 
 <script>
-
   const startHeightValue = () => {
     let vh = window.innerHeight * 1;
     document.querySelector(':root').style.setProperty('--vh', `${vh}px`);
@@ -64,5 +74,4 @@
   window.addEventListener('scroll', startHeightValue);
 
   startHeightValue();
-
 </script>

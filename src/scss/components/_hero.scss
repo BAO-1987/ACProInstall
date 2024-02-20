@@ -3,14 +3,13 @@
 
 .hero {
   $root: &;
-  padding: rem(37) 0;
 
   &__inner {
     display: flex;
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
-    border-radius: calc(var(--radius-main) * 2);
+    border-radius: var(--radius-big);
     min-height: 584px;
     background-position: 0 0;
     background-size: cover;
@@ -19,9 +18,9 @@
 
   &__content {
     z-index: 1;
-    padding: 0 rem(67);
+    padding: 0 4rem;
     width: 100%;
-    max-width: 720px;
+    max-width: 900px;
     color: var(--color-white);
   }
 
@@ -34,7 +33,6 @@
   p {
     margin-bottom: rem(40);
     font-size: 24px;
-    letter-spacing: 0.003em;
   }
 
   &--services {
