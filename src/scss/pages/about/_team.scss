@@ -1,125 +1,123 @@
-// @use "../../utils/functions/"as*;
-// @use "../../utils/mixins/"as*;
+@use "../../utils/functions/" as *;
+@use "../../utils/mixins/" as *;
 
-// .team {
-//   overflow: hidden;
-//   padding: rem(45) 0 rem(80);
+.team {
+  padding: 2rem 0;
 
-//   &__list {
-//     margin-bottom: 39px;
-//   }
+  &__list {
+    margin-bottom: 39px;
+  }
 
-//   &__item {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: flex-start;
-//     overflow: hidden;
-//     border-radius: calc(var(--radius-main) * 2);
-//     padding: rem(34);
-//     height: auto;
-//     background-color: var(--color-gray-400);
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    border-radius: var(--radius-big);
+    padding: 2rem;
+    height: auto;
+    background-color: var(--color-gray-100);
 
-//     img {
-//       margin: 0 auto 15px;
-//       border-radius: 50%;
-//       max-width: 200px;
-//       max-height: 200px;
-//     }
+    img {
+      margin: 0 auto 24px;
+      border-radius: 50%;
+      max-width: 200px;
+      max-height: 200px;
+    }
 
-//     h3 {
-//       margin: 0 auto;
-//       font-size: 32px;
-//     }
+    h3 {
+      margin: 0 auto;
+      line-height: 1;
+      color: var(--color-orange);
+    }
 
-//     span {
-//       display: block;
-//       margin-bottom: 24px;
-//       text-align: center;
-//     }
+    span {
+      font-weight: var(--fw-500);
+      font-size: clamp(16px, 1.05rem + 0.375vi, 24px);
+      line-height: 1.33;
+      text-align: center;
+    }
 
-//     p {
-//       font-size: 20px;
-//     }
-//   }
+    p {
+      text-align: center;
+    }
+  }
 
-//   &__btns {
-//     display: flex;
-//     justify-content: center;
-//     margin: 0 auto;
-//     text-align: center;
-//   }
+  &__name {
+    margin: 0 auto 24px;
+    text-align: center;
 
-//   h2 {
-//     margin: 0 auto 28px;
-//   }
+    @include media(mobile-l) {
+      display: flex;
+      align-items: center;
+    }
+  }
 
-//   .btn {
-//     padding: 14px 18px;
-//     width: auto;
-//     min-width: auto;
+  &__btns {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+  }
 
-//     &::after {
-//       right: 0;
-//     }
+  h2 {
+    margin: 0 auto 2rem;
+  }
 
-//     &:not(:last-child) {
-//       margin-right: 20px;
-//     }
+  .btn {
+    padding: 14px 18px;
+    width: auto;
+    min-width: auto;
 
-//     &.swiper-button-disabled {
-//       border-color: var(--color-gray-650);
-//       background-color: var(--color-gray-650);
-//       pointer-events: none;
-//     }
+    &::after {
+      right: 0;
+    }
 
-//     &--prev {
-//       scale: -1 1;
-//     }
-//   }
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
 
-//   .swiper-pagination {
-//     display: none;
-//   }
+    &.swiper-button-disabled {
+      opacity: 0.4;
+      pointer-events: none;
+    }
 
-//   @include media(tablet) {
-//     padding: rem(60) 0 0;
+    &--prev {
+      scale: -1 1;
+    }
+  }
 
-//     &__item {
-//       align-items: flex-start;
+  @include media(tablet) {
+    &__item {
+      align-items: flex-start;
 
-//       img {
-//         height: max-content;
-//         max-width: 90px;
-//       }
-//     }
-//   }
+      img {
+        height: max-content;
+        max-width: 90px;
+      }
+    }
+  }
 
-//   @include media(mobile-l) {
-//     &__item {
-//       padding: 24px;
+  @include media(mobile-l) {
+    &__item {
+      padding: 24px;
 
-//       img {
-//         margin-right: 14px;
-//         margin-bottom: 0;
-//         max-width: 48px;
-//       }
-//     }
+      img {
+        margin-right: 14px;
+        margin-bottom: 0;
+        max-width: 48px;
+      }
+    }
 
-//     &__name {
-//       display: flex;
-//       margin-bottom: 30px;
+    h3 {
+      margin-left: 0;
+      font-size: 20px;
+      text-align: left;
+    }
+  }
 
-//       span {
-//         margin-bottom: 0;
-//         text-align: left;
-//       }
-//     }
-
-//     h3 {
-//       margin-left: 0;
-//       font-size: 20px;
-//       text-align: left;
-//     }
-//   }
-// }
+  &-slider {
+    overflow: hidden;
+  }
+}

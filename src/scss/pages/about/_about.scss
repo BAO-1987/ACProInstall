@@ -1,0 +1,11 @@
+@use "../../utils/functions/" as *;
+@use "../../utils/mixins/" as *;
+
+.about {
+  padding: 4rem 0 5rem;
+  background-color: var(--color-gray-100);
+
+  h2 {
+    margin: 0 auto 2rem;
+  }
+}

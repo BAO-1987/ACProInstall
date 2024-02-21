@@ -45,12 +45,13 @@
     background-color: var(--color-white);
 
     .services__grid {
+    
       li {
         background-color: var(--color-gray-100);
 
         &:first-child {
-         width: 100%;
-         max-width: 780px;
+          width: 100%;
+          max-width: 780px;
         }
       }
     }

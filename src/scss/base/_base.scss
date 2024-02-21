@@ -12,7 +12,6 @@ body {
   font-family: var(--font-family-primary);
   font-weight: var(--fw-400);
   font-style: normal;
-  // font-size: clamp(16px, 1vw, 20px);
   font-size: clamp(16px, 15.2px + 0.25vi, 20px);
   line-height: 1.4;
   letter-spacing: 0;
@@ -45,7 +44,7 @@ body {
 }
 
 .main {
-  padding-top: var(--header-height);
+  padding-top: calc(var(--header-height) + vw(80));
 }
 
 .section {
@@ -98,4 +97,19 @@ body {
     inset: 0;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.66) 0.56%, rgba(0, 0, 0, 0.32) 79.06%, rgba(0, 0, 0, 0) 100%);
   }
+}
+
+.logo {
+  width: 100%;
+  max-width: 130px;
+  min-height: 72px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--radius-big);
+  padding: 2rem;
+  background-color: var(--color-white);
+  gap: 16px;
 }

@@ -1,5 +1,5 @@
-@use "../utils/functions/"as*;
-@use "../utils/mixins/"as*;
+@use "../utils/functions/" as *;
+@use "../utils/mixins/" as *;
 
 .nav {
   position: relative;
@@ -71,8 +71,15 @@
       //   left: 0;
       //   right: 0;
       // }
-      border-bottom: 2px solid var(--color-orange);
+      text-decoration-line: underline;
+      text-decoration-thickness: 2px;
+     text-decoration-color: var(--color-orange);
+     text-underline-offset: 12px;
     }
+  }
+
+  .btn--sign {
+    margin-right: 20px;
   }
 
   .btn {

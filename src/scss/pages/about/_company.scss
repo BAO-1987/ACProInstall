@@ -1,0 +1,17 @@
+@use "../../utils/functions/" as *;
+@use "../../utils/mixins/" as *;
+
+.company {
+  padding: 5rem 0;
+  background-color: var(--color-gray-100);
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  h2 {
+    margin: 0 auto 2rem;
+  }
+}

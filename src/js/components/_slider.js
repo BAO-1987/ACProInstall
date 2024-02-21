@@ -4,10 +4,7 @@ const swiperTeam = new Swiper('.team-slider', {
   slidesPerView: 1,
   spaceBetween: 20,
   modules: [Navigation, Pagination],
-  pagination: {
-    clickable: true,
-    el: '.swiper-pagination',
-  },
+ 
 
   draggable: true,
   grabCursor: true,
