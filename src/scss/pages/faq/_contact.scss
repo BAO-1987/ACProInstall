@@ -1,17 +1,11 @@
 @use "../../utils/functions/" as *;
 @use "../../utils/mixins/" as *;
 
-.request {
-  $root: &;
-
+.contact {
   h2 {
     margin: 0 auto 40px;
     font-weight: var(--fw-600);
-    font-size: clamp(32px, 2rem + 1vi, 40px);
     text-align: center;
-  }
-
-  .btn {
-    margin: 0 auto;
+    font-size: clamp(32px, 2rem + 1vi, 40px);
   }
 }

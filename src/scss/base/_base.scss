@@ -45,6 +45,10 @@ body {
 
 .main {
   padding-top: calc(var(--header-height) + vw(80));
+
+  &--clean {
+    padding-top: (var(--header-height));
+  }
 }
 
 .section {
