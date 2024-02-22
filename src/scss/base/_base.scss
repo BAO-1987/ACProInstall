@@ -96,17 +96,17 @@ body {
   }
 }
 
-.overlay {
-  position: relative;
+// .overlay {
+//   position: relative;
 
-  &::before {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    inset: 0;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.66) 0.56%, rgba(0, 0, 0, 0.32) 79.06%, rgba(0, 0, 0, 0) 100%);
-  }
-}
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     z-index: 1;
+//     inset: 0;
+//     background: linear-gradient(90deg, rgba(0, 0, 0, 0.66) 0.56%, rgba(0, 0, 0, 0.32) 79.06%, rgba(0, 0, 0, 0) 100%);
+//   }
+// }
 
 .logo {
   width: 100%;

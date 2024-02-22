@@ -12,12 +12,22 @@
     justify-content: space-between;
     margin: 0 auto 2rem;
     width: 100%;
-    max-width: 940px;
+    max-width: 895px;
+
+    @include media(mobile-l) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   &__item {
     &:not(:last-child) {
-      margin-right: 3.2rem;
+      margin-right: clamp(16px, vw(54), 54px);
+
+      @include media(mobile-l) {
+        margin: 0 0 16px;
+      }
     }
   }
 
@@ -35,5 +45,4 @@
     margin: 0 auto 24px;
     width: fit-content;
   }
-  
 }
