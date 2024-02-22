@@ -44,20 +44,21 @@ body {
 }
 
 .main {
-  padding-top: calc(var(--header-height) + vw(80));
-
-  &--clean {
-    padding-top: (var(--header-height));
-  }
+  padding-top: var(--header-height);
 }
 
 .section {
-  margin-bottom: clamp(3rem, vw(100), 6.25rem);
+  padding: clamp(50px, vw(100), 100px) 0;
 }
 
 .section-gray {
-  padding: 4rem 0 5rem;
+  padding: clamp(50px, vw(80), 80px) 0 clamp(50px, vw(100), 100px);
   background-color: var(--color-gray-100);
+}
+
+.logo {
+  width: 100%;
+  max-width: 130px;
 }
 
 #form-request {
@@ -94,24 +95,6 @@ body {
     opacity: 1;
     visibility: visible;
   }
-}
-
-// .overlay {
-//   position: relative;
-
-//   &::before {
-//     content: "";
-//     position: absolute;
-//     z-index: 1;
-//     inset: 0;
-//     background: linear-gradient(90deg, rgba(0, 0, 0, 0.66) 0.56%, rgba(0, 0, 0, 0.32) 79.06%, rgba(0, 0, 0, 0) 100%);
-//   }
-// }
-
-.logo {
-  width: 100%;
-  max-width: 130px;
-  min-height: 72px;
 }
 
 .content {

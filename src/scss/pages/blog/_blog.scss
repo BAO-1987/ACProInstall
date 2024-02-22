@@ -2,9 +2,6 @@
 @use "../../utils/mixins/" as *;
 
 .blog {
-  padding: 4rem 0 5rem;
-  background-color: var(--color-gray-100);
-
   h2 {
     margin: 0 auto 24px;
 
@@ -15,8 +12,32 @@
 
   &__list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2rem 20px;
+
+    @include media(tablet) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include media(mobile-m) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+    &:last-child {
+      @include media(tablet) {
+        grid-column: 2 span;
+        max-width: 370px;
+        margin: 0 auto;
+      }
+
+      @include media(mobile-m) {
+        grid-column: auto;
+        max-width: 100%;
+        margin: 0;
+      }
+    }
   }
 }
 

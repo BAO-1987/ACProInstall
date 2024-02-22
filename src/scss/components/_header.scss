@@ -14,23 +14,22 @@
     padding: clamp(12px, vw(24), 24px) 16px;
   }
 
-  &.hide {
-    transform: translateY(-100%);
-  }
-
   &-adv {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     padding: 8px 0;
-    background-color: var(--color-gray-300);
     font-size: 16px;
     line-height: 1.87;
+    background-color: var(--color-gray-300);
 
     a {
       display: block;
-      width: fit-content;
       margin-left: auto;
+      width: fit-content;
     }
+  }
+  &.hide {
+    transform: translateY(-100%);
   }
 }

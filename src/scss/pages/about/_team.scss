@@ -47,11 +47,6 @@
   &__name {
     margin: 0 auto 24px;
     text-align: center;
-
-    @include media(mobile-l) {
-      display: flex;
-      align-items: center;
-    }
   }
 
   &__btns {
@@ -103,17 +98,6 @@
     &__item {
       padding: 24px;
 
-      img {
-        margin-right: 14px;
-        margin-bottom: 0;
-        max-width: 48px;
-      }
-    }
-
-    h3 {
-      margin-left: 0;
-      font-size: 20px;
-      text-align: left;
     }
   }
 

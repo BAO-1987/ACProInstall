@@ -9,7 +9,6 @@
 
   // font-family
   --font-family-primary: "Rubik", sans-serif;
-  // --font-family-secondary: "Bakbak One", sans-serif;
 
   // font-weight
   --fw-400: 400;
@@ -27,9 +26,6 @@
 
   //  radius
   --radius-main: 12px;
-  --radius-big: calc((var(--radius-main) + 4px) * 2);
-
-  // shadow
-  --shadow-primary: 0px 8px 8px -4px #1118270a;
-  --shadow-secondary: 0px 20px 24px -4px #1118271a;
+  // --radius-big: calc((var(--radius-main) + 4px) * 2);
+  --radius-big: 1.6em;
 }

@@ -2,10 +2,15 @@
 @use "../../utils/mixins/" as *;
 
 .about {
-  padding: 4rem 0 5rem;
-  background-color: var(--color-gray-100);
-
   h2 {
     margin: 0 auto 2rem;
+  }
+
+  @include media(mobile-m) {
+    margin: 0 -16px;
+
+    .content {
+      border-radius: 0;
+    }
   }
 }

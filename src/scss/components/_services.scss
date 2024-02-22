@@ -2,9 +2,6 @@
 @use "../utils/mixins/" as *;
 
 .services {
-  padding: 4rem 0;
-  background-color: var(--color-gray-100);
-
   h2 {
     margin-bottom: 16px;
     + p {
@@ -44,11 +41,11 @@
   }
 
   &--reverse {
-    padding: 0;
     background-color: var(--color-white);
 
     .services__grid {
       grid-template-columns: repeat(12, 1fr);
+      margin: 0;
       gap: clamp(16px, vw(40), 40px);
 
       li {
@@ -63,11 +60,6 @@
           padding: 0;
           border-radius: 0;
           background-color: transparent;
-
-          // img {
-          //   max-width: 307px;
-          //   height: 238px;
-          // }
         }
 
         &:nth-child(3) {
@@ -100,39 +92,4 @@
   @include media(mobile-l) {
     grid-template-columns: 1fr;
   }
-
-  // @include media(tablet) {
-  //   padding: rem(60) 0;
-
-  //   &__grid {
-  //     grid-template-columns: repeat(2, 1fr);
-  //   }
-
-  //   &__item {
-  //     &:last-child {
-  //       grid-column: 1 / span 2;
-  //     }
-  //   }
-  // }
-
-  // @include media(mobile-l) {
-  //   &__grid {
-  //     grid-template-columns: 1fr;
-  //   }
-
-  //   &__item {
-  //     padding: 24px;
-  //     padding-top: 96px;
-
-  //     &:last-child {
-  //       grid-column: auto;
-  //     }
-  //   }
-  // }
-
-  // @include media(mobile-m) {
-  //   .btn {
-  //     max-width: none;
-  //   }
-  // }
 }
