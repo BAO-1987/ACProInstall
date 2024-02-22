@@ -55,6 +55,11 @@ body {
   margin-bottom: clamp(3rem, vw(100), 6.25rem);
 }
 
+.section-gray {
+  padding: 4rem 0 5rem;
+  background-color: var(--color-gray-100);
+}
+
 #form-request {
   position: fixed;
   z-index: 10;
