@@ -33,6 +33,6 @@
   overscroll-behavior: none;
 }
 
-.js-focus-visible :focus:not(.focus-visible) {
+.js-focus-visible:focus:not(.focus-visible) {
   outline: none;
 }

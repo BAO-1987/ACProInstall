@@ -90,6 +90,7 @@
 
     @include media(tablet) {
       margin: 0 auto 20px;
+      border-color: var(--color-gray-900);
     }
   }
 
