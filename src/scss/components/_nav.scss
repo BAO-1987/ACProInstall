@@ -61,6 +61,7 @@
     position: relative;
     font-weight: var(--fw-500);
     font-size: 16px;
+    line-height: 1;
     transition: color 0.3s linear;
 
     &:hover {
@@ -71,10 +72,10 @@
       &::before {
         content: "";
         position: absolute;
-        bottom: -12px;
+        bottom: -16px;
         width: 96px;
         height: 2px;
-        background-color: var(--color-orange);
+        background-color: var(--color-orange-400);
       }
     }
   }
