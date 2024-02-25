@@ -19,6 +19,7 @@
 
   &__content {
     padding: clamp(16px, vw(24), 24px) clamp(16px, vw(31), 31px) clamp(16px, vw(30), 30px);
+    height: 100%;
     background-color: var(--color-white);
   }
 
