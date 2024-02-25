@@ -8,25 +8,14 @@
     margin: 0 auto 2rem;
   }
 
-  &__top {
-    overflow: hidden;
-    margin-bottom: 20px;
-    border-radius: var(--radius-big);
-    min-height: clamp(100px, vw(220), 220px);
-    padding: clamp(16px, vw(40), 40px);
+  &__desk {
+    min-height: clamp(190px, vw(220), 220px);
     background-position: right;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color: var(--color-gray-100);
+    background-size: clamp(300px, vw(430), 430px) 260px;
 
-    p {
-      width: 100%;
-      max-width: 790px;
-
-      @include media(tablet) {
-        text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);
-        color: var(--color-white);
-      }
+    @include media(tablet) {
+      min-height: 250px;
+      background-size: contain;
     }
   }
 

@@ -2,11 +2,10 @@
 @use "../utils/mixins/" as *;
 
 .single {
- 
   h1 {
     margin-bottom: 24px;
 
-    & + p {
+    + p {
       margin-bottom: 2rem;
     }
   }
@@ -29,25 +28,21 @@
 
     &--clean {
       display: block;
-
-      // h2 {
-      //   max-width: 500px;
-      // }
     }
 
     @include media(mobile-l) {
-      grid-template-columns: 1fr;
       column-gap: 0;
-    
-        br {
-          display: none;
-        }
+      grid-template-columns: 1fr;
+
+      br {
+        display: none;
+      }
     }
   }
 
   &__content {
     border-radius: var(--radius-big);
-    padding: 2rem;
+    padding: clamp(16px, vw(40), 40px);
     background-color: var(--color-white);
   }
 

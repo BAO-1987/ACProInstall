@@ -5,13 +5,14 @@
   h2 {
     margin: 0 auto 24px;
 
-    & + p {
+    + p {
       margin-bottom: 2rem;
     }
   }
 
   &__list {
     display: grid;
+    grid-auto-rows: minmax(min-content, auto);
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2rem 20px;
 
@@ -20,6 +21,7 @@
     }
 
     @include media(mobile-m) {
+      grid-auto-rows: 1fr;
       grid-template-columns: 1fr;
     }
   }
@@ -28,16 +30,14 @@
     &:last-child {
       @include media(tablet) {
         grid-column: 2 span;
-        max-width: 370px;
         margin: 0 auto;
+        max-width: 400px;
       }
 
       @include media(mobile-m) {
         grid-column: auto;
         max-width: 100%;
-        margin: 0;
       }
     }
   }
 }
-

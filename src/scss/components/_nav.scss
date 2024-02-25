@@ -90,8 +90,8 @@
     margin-right: 20px;
 
     @include media(tablet) {
-      margin: 0 auto 20px;
-      border-color: var(--color-gray-900);
+      margin: 0 auto 20px !important;
+      border-color: var(--color-gray-900) !important;
     }
   }
 

@@ -14,22 +14,23 @@
     padding: clamp(12px, vw(24), 24px) 16px;
   }
 
-  &-adv {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 8px 0;
-    font-size: 16px;
-    line-height: 1.87;
-    background-color: var(--color-gray-300);
-
-    a {
-      display: block;
-      margin-left: auto;
-      width: fit-content;
-    }
-  }
   &.hide {
     transform: translateY(-100%);
+  }
+}
+
+.header-adv {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 8px 0;
+  font-size: 16px;
+  line-height: 1.87;
+  background-color: var(--color-gray-300);
+
+  a {
+    display: block;
+    margin-left: auto;
+    width: fit-content;
   }
 }

@@ -2,10 +2,8 @@
 @use "../../utils/mixins/" as *;
 
 .team {
-  padding: 2rem 0;
-
   &__list {
-    margin-bottom: 39px;
+    margin-bottom: 2rem;
   }
 
   &__item {
@@ -15,7 +13,7 @@
     justify-content: flex-start;
     overflow: hidden;
     border-radius: var(--radius-big);
-    padding: 2rem;
+    padding: 2rem clamp(20px, vw(38), 38px);
     height: auto;
     background-color: var(--color-gray-100);
 
@@ -27,9 +25,9 @@
     }
 
     h3 {
-      margin: 0 auto;
+      margin: 0 auto 5px;
       line-height: 1;
-      color: var(--color-orange);
+      color: var(--color-orange-400);
     }
 
     span {
@@ -54,6 +52,7 @@
     justify-content: center;
     margin: 0 auto;
     text-align: center;
+    gap: 16px;
   }
 
   h2 {
@@ -61,16 +60,12 @@
   }
 
   .btn {
-    padding: 14px 18px;
-    width: auto;
+    padding: 12px 14px;
+    width: 40px;
     min-width: auto;
 
     &::after {
       right: 0;
-    }
-
-    &:not(:last-child) {
-      margin-right: 20px;
     }
 
     &.swiper-button-disabled {
@@ -88,6 +83,7 @@
       align-items: flex-start;
 
       img {
+        overflow: hidden;
         height: max-content;
         max-width: 90px;
       }
@@ -97,11 +93,10 @@
   @include media(mobile-l) {
     &__item {
       padding: 24px;
-
     }
   }
+}
 
-  &-slider {
-    overflow: hidden;
-  }
+.team-slider {
+  overflow: hidden;
 }

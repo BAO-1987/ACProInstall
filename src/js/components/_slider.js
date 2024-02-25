@@ -4,7 +4,7 @@ const swiperTeam = new Swiper('.team-slider', {
   slidesPerView: 1,
   spaceBetween: 20,
   modules: [Navigation, Pagination],
- 
+
 
   draggable: true,
   grabCursor: true,
@@ -19,25 +19,5 @@ const swiperTeam = new Swiper('.team-slider', {
     650: {
       slidesPerView: 2,
     },
-  },
-});
-
-const swiperReviews = new Swiper('.reviews__slider', {
-  slidesPerView: 1,
-  speed: 500,
-  effect: 'fade',
-  autoplay: {
-    delay: 200,
-  },
-  modules: [Navigation, Scrollbar, Pagination, EffectFade],
-  scrollbar: {
-    el: '.swiper-scrollbar',
-    draggable: true,
-  },
-  draggable: true,
-  grabCursor: true,
-  navigation: {
-    nextEl: '.reviews .btn--next',
-    prevEl: '.reviews .btn--prev',
   },
 });

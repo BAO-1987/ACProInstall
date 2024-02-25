@@ -33,7 +33,7 @@
   &:hover,
   &:focus {
     border-color: var(--color-orange);
-    color: var(--color-orange);
+    color: var(--color-orange-400);
     background-color: var(--color-white);
   }
 
@@ -44,26 +44,63 @@
     &:hover,
     &:focus {
       color: var(--color-white);
-      background-color: var(--color-orange);
+      background-color: var(--color-orange-400);
     }
   }
 
-  &--sign {
-    max-width: 144px;
-    color: var(--color-gray-900);
-    background-color: var(--color-white);
+  // &--sign {
+  //   max-width: 144px;
+  //   color: var(--color-gray-900);
+  //   background-color: var(--color-white);
 
-    &::before {
-      @include mask;
+  //   &::before {
+  //     @include mask;
 
-      position: relative;
-      mask-image: url("../images/icons/account.svg");
-      width: 18px;
-      height: 18px;
-    }
+  //     position: relative;
+  //     mask-image: url("../images/icons/account.svg");
+  //     width: 18px;
+  //     height: 18px;
+  //   }
 
-    &::after {
-      content: none;
-    }
+  //   &::after {
+  //     content: none;
+  //   }
+  // }
+}
+
+button.formsapp-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid transparent !important;
+  border-radius: var(--radius-main) !important;
+  padding: 18px clamp(18px, vw(24), 24px) !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  max-width: 144px !important;
+  font-family: var(--font-family-primary) !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  color: var(--color-gray-900) !important;
+  background-color: var(--color-white) !important;
+
+  &::before {
+    @include mask;
+
+    position: relative;
+    mask-image: url("../images/icons/account.svg");
+    width: 18px;
+    height: 18px;
+    right: 5px;
+  }
+
+  &::after {
+    content: none;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--color-orange-400) !important;
   }
 }
