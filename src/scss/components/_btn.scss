@@ -92,7 +92,7 @@ button.formsapp-button {
     mask-image: url("../images/icons/account.svg");
     width: 18px;
     height: 18px;
-    right: 5px;
+    right: 12px;
   }
 
   &::after {
@@ -102,5 +102,6 @@ button.formsapp-button {
   &:hover,
   &:focus {
     color: var(--color-orange-400) !important;
+    border-color: var(--color-orange-400) !important;
   }
 }
